@@ -1,8 +1,11 @@
+import { FirstBanner } from "./components/FirstBanner/FirstBanner";
+import { Header } from "./components/Header/Header";
 
 export default function PortfolioApp () {
   return (
     <div>
-    <h2>Second Porfolio!</h2>
+      <Header />
+      <FirstBanner />
     </div>
   )
 }
