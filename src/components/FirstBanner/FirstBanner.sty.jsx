@@ -16,7 +16,7 @@ export const FirstContentContainer = styled.div`
     flex-direction: column;
     width: 100%;
     height: 80%;
-    padding: 0px 50px;
+    padding: 0px 0px;
     background: ${THEME.secondaryLight};
     justify-content: center;
     align-items: center;
@@ -30,6 +30,11 @@ export const FirstContentContainer = styled.div`
     h1{
      animation: appearInfo 1.5s ease-in 0s 1;
      transition: .2s;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     gap: 20px;
     }
     .firstH1Label{
         animation-name: dissapear;
@@ -71,13 +76,22 @@ export const FirstContentContainer = styled.div`
         font-size: 2.5rem;
     }
     ${ResponsiveTo('md')} {
-        font-size: 3.5rem;
+        padding: 0px 50px;
         flex-direction: row;
+    }
+    ${ResponsiveTo('xl')} {
+        font-size: 3rem;
+    }
+    ${ResponsiveTo('xl')} {
+        font-size: 3.5rem;
+    }
+    ${ResponsiveTo('xxl')} {
+        font-size: 4rem;
     }
 `
 
 export const ChangingTextContainer = styled.div`
-    padding: 0px 50px;
+    padding: 0px 5px;
     border: 2px dotted ${THEME.primaryDark};
     border-radius: 30px;
     height: 1.5em;
@@ -124,5 +138,8 @@ export const ChangingTextContainer = styled.div`
         0% { background-color: none; }
         90% { background-color: transparent; }
         100% { background-color: ${THEME.primaryDark}; }
+    }
+    ${ResponsiveTo('md')} {
+        padding: 0px 50px;
     }
 `

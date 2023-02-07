@@ -21,3 +21,16 @@ p, button{
     font-family: 'Futura', sans-serif;
     font-weight: normal;
 }
+
+.custom-container{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width: 1024px){
+    .custom-container{
+        width: 80%;
+    }
+}
